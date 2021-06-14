@@ -35,7 +35,7 @@ li a:hover {
     display: flex;
     list-style: none;
     width: 100vw;
-    height: 5vh;
+    height: 40px;
     justify-content: flex-end;
     align-items: center;
     font-family: 'Noto Sans JP', sans-serif;
@@ -148,34 +148,40 @@ li a:hover {
 .image-section {
     display: flex;
     justify-content: center;
-    border: red 10px solid;
+    /*border: red 10px solid;*/
+    position: relative;
     height: 70vh;
     width: 30vw;
+    /*right: 3%;*/
 
 }
 .me {
     max-width: 80%;
     max-height: 70%;
     position: relative;
-    right: 30px;
+    right: 10%;
+    top: 35%;
     z-index: 1;
 }
 .keyboard {
-    height: 550px;
-    width: 700px;
+    max-width: 130%;
+    max-height: 90%;
     position: relative;
+    left: 50%;
     /*left: 9vw;*/
 }
 .text-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 70vh;
     width: 30vw;
-    border: red solid 3px;
 }
 .about-title {
     position: relative;
+    text-align: center;
     font-size: 40px;
+    padding-bottom: 20px;
     /*left: 67vw;*/
 
 }
@@ -378,3 +384,6 @@ button:hover {
 .first-line {
     font-size: 24px;
 }
+@media screen and (max-width: 800px),
+(min-height: 1200px) {
+    }
