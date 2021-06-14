@@ -4,13 +4,13 @@
     box-sizing: content-box;
 }
 .header {
-    background: /*no-repeat*/ url("site/bg.jpg");
+    background: no-repeat url("site/bg.jpg");
     height: 100vh;
     display: flex;
 }
 .headerTitle {
     color: white;
-    font-size: 60px;
+    font-size: 7vh;
     position: absolute;
     top: 75vh;
     left: 6vw;
@@ -71,17 +71,21 @@ li a:hover {
         flex-direction: column;
         background-color: black;
         width: 100vw;
-        height: 40px;
+        height: 7vh;
         position: fixed;
         z-index: 4;
         align-items: flex-end;
-        justify-content: right;
+        justify-content: center;
     }
     .hamburger-btn {
         display: flex !important;
-        position: fixed;
-        top: 6px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        left: 15px;
+        top: 12px;
         transition: all .5s ease-in-out;
+        /*border: red solid 2px;*/
     }
     .middleStick {
         transition: all .5s ease-in-out;
@@ -100,41 +104,41 @@ li a:hover {
         visibility: hidden;
         flex-direction: column;
         list-style: none;
-        width: 135px;
-        height: 200px;
+        width: 600px;
+        height: 750px;
         align-items: flex-end;
         justify-content: center;
         font-family: 'Noto Sans JP', sans-serif;
         position: absolute;
-        right: 15px;
+        right: 0px;
         top: 0px;
         z-index: 5;
         padding-top: 20px;
         padding-right: 6px;
-        transform: translateX(200px);
+        transform: translateX(700px);
         transition: all .5s ease-in-out;
     }
     /*animation*/
     .hamburger-btn.open .middleStick {
-        transform: translateX(-50px);
+        transform: translateX(-300px);
         background: transparent;
     }
     .hamburger-btn.open .upperStick {
-        transform: rotate(45deg) translate(12px, -15px);
+        transform: rotate(45deg) translate(20px, -20px);
     }
     .hamburger-btn.open .bottomStick {
-        transform: rotate(-45deg) translate(-12px, -5px);
+        transform: rotate(-45deg) translate(-20px, 10px);
     }
     .list.move {
         transform: translateX(0px);
     }
     .list a {
-        font-size: 20px;
+        font-size: 80px;
         color: white;
     }
     .last-list-item {
         background-color: unset;
-        width: 55px;
+        width: 200px;
     }
 }
 
@@ -386,4 +390,5 @@ button:hover {
 }
 @media screen and (max-width: 800px),
 (min-height: 1200px) {
+
     }
