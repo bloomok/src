@@ -390,5 +390,17 @@ button:hover {
 }
 @media screen and (max-width: 800px),
 (min-height: 1200px) {
-
+    .header {
+        background-size: cover;
+        background-position-x: -1600px;
+        height: 100vh;
+        display: flex;
+    }
+    .headerTitle {
+        color: white;
+        font-size: 130px;
+        position: absolute;
+        top: 69vh;
+        left: 6vw;
+        font-family: 'Cuprum', sans-serif;
     }
