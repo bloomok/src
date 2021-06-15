@@ -400,7 +400,7 @@ button:hover {
         color: white;
         font-size: 130px;
         position: absolute;
-        top: 63vh;
+        top: 55vh;
         left: 6vw;
         font-family: 'Cuprum', sans-serif;
     }
@@ -471,15 +471,15 @@ button:hover {
         flex-direction: column;
     }
     .main-card1 {
-        height: 53%;
-        width: 70%;
+        height: 48%;
+        width: 65%;
         margin-right: 0;
     }
     .main-card2 {
         margin-left: 0;
         margin-top: 2%;
-        height: 53%;
-        width: 70%;
+        height: 48%;
+        width: 65%;
     }
     .open-window {
         height: 90px;
