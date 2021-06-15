@@ -291,6 +291,7 @@ li a:hover {
     font-size: 25px;
     margin-bottom: 1vh;
 }
+/*Pop-up windows*/
 .window .overlay {
     position:fixed;
     top:0;
@@ -308,8 +309,8 @@ li a:hover {
     left:50%;
     transform:translate(-50%,-50%) scale(0);
     background:#fff;
-    width:50vw;
-    max-width:50vw;
+    width:80vw;
+    max-width:80vw;
     height:50vh;
     z-index:2;
     border: 10px solid black;
@@ -338,7 +339,6 @@ li a:hover {
     border-top: 1px;
     border-left: 1px;
 }
-
 .window.active .overlay {
     display:block;
 }
@@ -347,7 +347,6 @@ li a:hover {
     transition:all 300ms ease-in-out;
     transform:translate(-50%,-50%) scale(1);
 }
-
 .button {
     position: relative;
     top: 50%;
@@ -422,7 +421,7 @@ button:hover {
         position: relative;
         height: 50vh;
         width: 90vw;
-        top: 3%;
+        margin-top: 25%;
         /*right: 3%;*/
 
     }
@@ -461,5 +460,86 @@ button:hover {
         position: relative;
         font-size: 70px;
     }
-
+    #portfolio {
+        flex-direction: column;
+    }
+    .portfolio-title {
+        font-size: 80px;
+        margin-top: 110px;
+    }
+    .communism {
+        flex-direction: column;
+    }
+    .main-card1 {
+        height: 53%;
+        width: 70%;
+        margin-right: 0;
+    }
+    .main-card2 {
+        margin-left: 0;
+        margin-top: 2%;
+        height: 53%;
+        width: 70%;
+    }
+    .open-window {
+        height: 90px;
+        width: 180px;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .close-btn {
+        align-self: center;
+        transform: translate(0%, 0%);
+        left: 0;
+    }
+    .window .close-btn {
+        left: 0;
+        width: 180px;
+        height: 90px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .kostyl {
+        font-size: 50px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .window-title {
+        font-size: 120px;
+    }
+    .gibberish {
+        font-size: 60px;
+    }
+    .first-line {
+        font-size: 60px;
+    }
+    .contacts-title {
+        margin-bottom: 1vh;
+        text-transform: uppercase;
+        font-size: 80px;
+    }
+    .contacts-text {
+        margin-bottom: 2vh;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon {
+        margin-left: 30px;
+        margin-right:30px;
+        width: 100px;
+    }
+    .director {
+        font-size: 50px;
+    }
+    .year {
+        font-size: 35px;
+    }
 }
